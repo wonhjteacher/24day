@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr = [1,2,3,4,5];
+        const [arr1,arr2,arr3,arr4,arr5] = [1,2,3,4,5];
+        console.log(arr1)
+ 
+        const [num1,num2,num3 = 300]= [100,200] 
+        console.log(num3)
+
+        var [a,b] = ['철수','영희'];
+        [a,b] = [100,200] 
+        console.log(a)
+
+        let price , item1 , item2 ;
+
+        price = [item1 , item2 ]  = ['사과','배','키위','귤']
+
+        console.log(item1)
+        console.log(item2)
+        console.log(price)
+
+        const [txt1,txt2,...txt3] = ['a','b','c','d']  
+        console.log(price)
+
+
+        function arrFnc([name,age]){
+            console.log(name)
+            console.log(age)
+        }
+
+        const people = ['shin',20]
+        //arrFnc(people[0],people[1])
+        arrFnc(['shin',20])
+        //[name,age] = ['shin',20]
+
+
+
+
+        
+
+     
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let product = {shape :{width:150, height:100,weight:50,},color:['red','green','yellow']}
+        
+        //console.log(product.shape.width)
+
+
+        let {shape :{width, weight, height},color:[topColor,bottomColor,sideColor]} =  product
+
+        console.log('width'+width)
+        console.log('height'+height)
+        console.log('weight'+weight)
+        console.log(topColor)
+        console.log(bottomColor)
+        console.log(sideColor)
+
+      
+
+    </script>
+</body>
+</html>
